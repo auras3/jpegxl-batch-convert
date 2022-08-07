@@ -108,7 +108,7 @@ async def main():
     for new_name, old_name in reversed(new_old_names):
         try:
             # Rename input folders
-            # os.rename(new_name, old_name)
+            os.rename(new_name, old_name)
 
             # We also need to rename the output folders
             # Since the directory structure is the same, we can just get the relative paths and
